@@ -1,0 +1,19 @@
+.label {
+    font-size: $font-size-small;
+    line-height: $line-height-big;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: $text-color;
+    @media #{$screen-small} {
+        font-size: 9px;
+    }
+
+    &--validity {
+        @media #{$screen-small} {
+            width: 88px;
+        }
+       
+    }
+}

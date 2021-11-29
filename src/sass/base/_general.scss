@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+};
+
+html {
+    min-height: 100%;
+
+    font-family: $font-family-default;
+    font-size: 100%;
+
+    background: linear-gradient(135deg, $main-color 0%, #32D6BD 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: $secondary-color;
+
+};
+
+body {
+    min-height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: $font-size-base;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-normal;
+};
+
+main {
+    margin-top: 76px;
+    margin-bottom: 184px;
+    @media #{$screen-medium}{
+        margin-top: 56px;
+        margin-bottom: 169px;
+    }
+    
+    @media #{$screen-small}{
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+}
+
+h1 {
+    margin: 0;
+
+    font-weight: $font-weight-extra-bold;
+    font-size: $font-size-title-big;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media #{$screen-small} {
+        font-size: $font-size-title-small;
+    }
+    
+}
+
+p {
+    margin: 0;
+
+    font-weight: $font-weight-regular;
+    font-size: $font-size-medium;
+    line-height: $line-height-small;
+
+    @media #{$screen-small} {
+        font-size: $font-size-base;
+        line-height: $line-height-normal;
+    }
+
+}
+a  {
+    text-decoration: none;
+
+    color: $link-color;
+
+    cursor: pointer;
+
+    transition: all .5s ease;
+
+    &:hover {
+        opacity: .7;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+};
+
+button {
+    padding: 0;
+    background: none;
+    border: none;
+    
+    cursor: pointer;
+};
+
+input {
+    padding: 10px 12px 11px;
+    border: none;
+    outline: none;
+};
+
+.container {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+
+    @media #{$screen-medium}{
+        padding: 0 24px;
+        width: 100%;
+    }
+    
+    @media #{$screen-small}{
+        padding: 0 16px;
+        width: 100%;
+    }
+}
+
+header {
+    padding-top: 14px;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}

@@ -1,0 +1,132 @@
+.payment {
+    &__wrap {
+        gap: 72px;
+        @media #{$screen-medium} {
+           flex-direction: column;
+           align-items: center;
+        }
+    }
+    &__text {
+        max-width: 400px;
+        @media #{$screen-medium} {
+            align-self: baseline;
+            max-width: 674px;
+        }
+        
+    }
+    &__descr {
+        margin-top: 40px;
+        opacity: 0.6;
+    }
+    &-card-facial {
+        position: relative;
+        z-index: 1;
+    }
+    &-card-back {
+        position: absolute;
+        z-index: 0;
+        top: 66px;
+        right: 48px;
+        @media #{$screen-small} {
+            height: 256px;
+            top: 119px;
+            right: auto;
+        }
+       
+        &__input {
+            float: right;
+            margin-top: 10px;
+            max-width: 93px;
+
+            @media #{$screen-small} {
+                position: relative;
+                top: 134px;
+                max-width: max-content;
+
+                flex-wrap: wrap;
+                flex-direction: initial;
+                
+                float: initial;
+            }
+
+            label {
+                @media #{$screen-small} {
+                    width: 100%;
+                }
+            }
+            
+        }
+        &__descr {
+            margin-top: 6px;
+
+            font-size: $font-size-normal;
+
+            color: $text-color;
+
+            @media #{$screen-small} {
+                width: 77px;
+                margin-left: 16px;
+            }
+          
+        }
+    }
+
+    &__block {
+        position: relative;
+
+        width: 627px;
+        padding: 30px 47px;
+
+        background: $secondary-color;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+        border-radius: 4px;
+
+        @media #{$screen-small} {
+            padding: 40px 16px 30px 16px;
+            width: 288px;
+        }
+    }
+
+    &__security {
+        margin-top: 66px;
+
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        &-text{
+            max-width: 219px;
+        }
+        @media #{$screen-small} {
+            display: none;
+        }
+        
+    }
+    &__button {
+        svg {
+            display: none;
+            fill: $secondary-color;
+            
+            @media #{$screen-small} {
+                margin-right: 31px;
+
+                display: inline-block;
+                vertical-align: middle;
+                width: 16px;
+            }
+        }
+        @media #{$screen-small} {
+            display: block;
+            margin: 0 auto;
+            margin-top: 128px;
+        }
+    }
+    &__link {
+        margin-top: 41px;
+        display: block;
+       
+        @media #{$screen-small} {
+            margin-top: 24px;
+            text-align: center;
+        }
+    }
+}

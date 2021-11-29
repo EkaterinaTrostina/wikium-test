@@ -1,0 +1,22 @@
+.input {
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+
+    background: $secondary-color;
+
+    color: #333333;
+    &--data {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input {    
+            border-radius: 4px;
+
+            text-align: center;
+        }
+    }
+
+    &--small {
+        width: 93px;
+    }
+}

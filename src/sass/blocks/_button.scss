@@ -1,0 +1,21 @@
+.button {
+    padding: 17px 40px; 
+
+    background-color: $main-color;
+    border-radius: 50px;
+    color: $secondary-color;
+
+    font-weight: $font-weight-semibold;
+    font-size: $font-size-button;
+    line-height: 1.375;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    transition: all .5s ease;
+
+    &:hover {
+        opacity: .8;
+        transform: scale(1.1);
+    }
+}
